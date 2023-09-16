@@ -79,7 +79,7 @@ public class Board : MonoBehaviour
 
     
 
-    private void SetUp()
+    public void SetUp()
     {
         GenerateBlankSpaces();
         for (int i = 0; i < width; i++)
@@ -118,7 +118,7 @@ public class Board : MonoBehaviour
         }
     }
 
-    private bool MatchesAt(int column, int row, GameObject piece)
+    public bool MatchesAt(int column, int row, GameObject piece)
     {
         if (column > 1 && row > 1)
         {
